@@ -43,3 +43,6 @@ fp-info-cache
 *.kicad_prl
 
 *_restore_backup*
+
+production/backups
+production/backups/*
