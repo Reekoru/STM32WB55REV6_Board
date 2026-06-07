@@ -60,11 +60,11 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.15,
+          "min_clearance": 0.5,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
-          "pad_connection": 2,
-          "remove_islands": 1,
+          "pad_connection": 1,
+          "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
         }
@@ -83,39 +83,19 @@
       ],
       "drc_exclusions": [
         [
-          "hole_clearance|108050000|118345000|2709382d-6a39-4d3a-b65a-9fe562fabe62|69f9915f-a383-4ef3-bfc0-a6f68e7dae09",
+          "annular_width|112400000|96350000|c0a39008-cbcc-4080-8bc6-399fef47e94d|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
-          "hole_clearance|108050000|118345000|4eaebb2e-be2f-4f55-b996-0ee9821ef785|69f9915f-a383-4ef3-bfc0-a6f68e7dae09",
+          "annular_width|112400000|98150000|c48c6a09-b8e1-4430-8cfa-51a7c9f1725a|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
-          "hole_clearance|108550000|118345000|0081a6f8-6a9a-43a8-af3f-b0f100891a01|69f9915f-a383-4ef3-bfc0-a6f68e7dae09",
+          "annular_width|112450000|100650000|509bc145-629d-4e5f-b8b4-7d56a57bc8b7|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
-          "hole_clearance|108550000|118345000|5bd08e9b-b777-4bb7-8184-5129b5f52277|69f9915f-a383-4ef3-bfc0-a6f68e7dae09",
-          ""
-        ],
-        [
-          "hole_clearance|113650000|118345000|9d0604c0-68c2-4d55-af19-a3c0bc9fb6c6|2b25ff8c-5b04-4129-8931-e61a2cd6e7dd",
-          ""
-        ],
-        [
-          "hole_clearance|113650000|118345000|d7b044c2-5b30-4ac5-b282-82cc6c092031|2b25ff8c-5b04-4129-8931-e61a2cd6e7dd",
-          ""
-        ],
-        [
-          "hole_clearance|114150000|118345000|388c0fe9-8f9c-44a8-9f5a-4a1b15f7f9dc|2b25ff8c-5b04-4129-8931-e61a2cd6e7dd",
-          ""
-        ],
-        [
-          "hole_clearance|114150000|118345000|adc91a4a-cefe-4585-b20d-2fc7ce7671fb|2b25ff8c-5b04-4129-8931-e61a2cd6e7dd",
-          ""
-        ],
-        [
-          "items_not_allowed|104186300|98831000|1db91885-19cb-4f1c-93d8-0580f93e265d|00000000-0000-0000-0000-000000000000",
+          "annular_width|112450000|102450000|1152e832-4a43-4143-81bd-2b37ad0e7b0c|00000000-0000-0000-0000-000000000000",
           ""
         ]
       ],
@@ -194,8 +174,8 @@
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.26,
         "min_hole_to_hole": 0.25,
-        "min_microvia_diameter": 0.2,
-        "min_microvia_drill": 0.1,
+        "min_microvia_diameter": 0.25,
+        "min_microvia_drill": 0.15,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
@@ -203,8 +183,8 @@
         "min_through_hole_diameter": 0.25,
         "min_track_width": 0.15,
         "min_via_annular_width": 0.15,
-        "min_via_diameter": 0.65,
-        "solder_mask_to_copper_clearance": 0.0,
+        "min_via_diameter": 0.5,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -594,10 +574,12 @@
         "tuning_profile": ""
       },
       {
+        "clearance": 0.1,
         "name": "GPIO",
         "pcb_color": "rgb(255, 163, 9)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.15,
         "tuning_profile": ""
       },
       {
@@ -863,7 +845,7 @@
         "uuid": "456d5bce-2783-4e9b-b1a6-9e254196200d"
       }
     ],
-    "used_designators": "#PWR31-32,#PWR36-39",
+    "used_designators": "FID1-3",
     "variants": []
   },
   "sheets": [
